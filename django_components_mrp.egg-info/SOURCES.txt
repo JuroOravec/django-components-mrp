@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+django_components_mrp.egg-info/PKG-INFO
+django_components_mrp.egg-info/SOURCES.txt
+django_components_mrp.egg-info/dependency_links.txt
+django_components_mrp.egg-info/requires.txt
+django_components_mrp.egg-info/top_level.txt
+project/app/__init__.py
+project/app/components.py
+project/app/settings.py
+project/app/urls.py
+project/app/views.py
+project/app/wsgi.py

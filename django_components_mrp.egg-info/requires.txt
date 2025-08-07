@@ -1,0 +1,2 @@
+django>=5.2.5
+django-components>=0.141.2

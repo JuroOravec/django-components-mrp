@@ -38,7 +38,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'project.urls'
+ROOT_URLCONF = 'project.app.urls'
 
 TEMPLATES = [
     {
@@ -55,7 +55,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project.wsgi.application'
+WSGI_APPLICATION = 'project.app.wsgi.application'
 
 
 # Database
@@ -114,5 +114,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Django-components
 
 COMPONENTS = {
-    "libraries": ["project.components"],
+    "libraries": ["project.app.components"],
 }
