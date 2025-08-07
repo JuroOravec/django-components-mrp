@@ -1,0 +1,22 @@
+# Django-Components Recursion Issue MRP
+
+Steps to reproduce the issue:
+
+1. Pull this repository
+2. Install dependencies
+3. Run the development server
+    ```shell
+    python manage.py runserver
+    ```
+4. Navigate to the development server in your browser
+5. Observe the following error:
+    ```
+    TemplateDoesNotExist
+    An error occured while rendering components a-outer-component > b-inner-component > b-inner-component(slot:b):d-extended-template.html
+
+    Django tried loading these templates, in this order:
+    Using engine django:
+        django.template.loaders.filesystem.Loader: django-components-mrp/templates/d-extended-template.html (Skipped to avoid recursion)
+        django.template.loaders.app_directories.Loader: django-components-mrp/.venv/lib/python3.11/site-packages/django/contrib/admin/templates/d-extended-template.html (Source does not exist)
+        django.template.loaders.app_directories.Loader: django-components-mrp/.venv/lib/python3.11/site-packages/django/contrib/auth/templates/d-extended-template.html (Source does not exist)
+    ```
